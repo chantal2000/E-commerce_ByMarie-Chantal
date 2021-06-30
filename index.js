@@ -10,7 +10,7 @@ function check() {
         moreText.style.display = "none"
     } else {
         dots.style.display = "none";
-        btnText.innerHTML = "Readless"
+        btnText.innerHTML = "Read Less"
         moreText.style.display = "inline"
     }
 }
