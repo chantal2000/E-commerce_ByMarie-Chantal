@@ -24,23 +24,20 @@
 
 <body id="body">
     <!-- <h1>Buy and sell products with Chantos'farm!!</h1> -->
-    <p id="top">Chanto's farm values your feedback alot. As such we are carrying out a 2 minute survey to enable us improve our service.<br> click <a href="#here">Here</a> to start the Survey</p>
+    <p id="top">Chanto's farm values your feedback alot. As such we are carrying out a 2 minute survey to enable us improve our service.<br> click <a href="#here" id="fooo">Here</a> to start the Survey</p>
     <nav>
-        <a href="mailto:nniyonkuruchantal@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>nniyonkuruchantal@gmail.com
+        <a href="mailto:nniyonkuruchantal@gmail.com" id="foo"><i class="fa fa-envelope-o" aria-hidden="true"></i>nniyonkuruchantal@gmail.com
         </a>
-        <a href="#call"><i class="fa fa-phone-square" aria-hidden="true">+250786738069</i></a>
-        <a href=" https://twitter.com/home " class="fa fa-twitter "></a>
-        <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin"></a>
-        <a href="https://github.com/" class="fa fa-github"></a>
+        <a href="#call"><i class="fa fa-phone-square" aria-hidden="true"id="foo">+250786738069</i></a>
+        <a href=" https://twitter.com/home " class="fa fa-twitter" id="foo"></a>
+        <a href="https://www.linkedin.com/feed/" class="fa fa-linkedin" id="foo"></a>
+        <a href="https://github.com/" class="fa fa-github" id="foo"></a>
 
-        <div class=" nav_right ">
+        <div class="nav_right">
             <button><a href="#ussd">USSD updates</a></button>
-
             <button><a href="#register">Register</a></button>
             <button><a href="#log">Login</a></button>
-
             <!-- <a href="#contact" id="contact">Register</a> -->
-            <br>
             <form class="example" action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search2">
                 <button type="submit" id="search"><a href="#request"><i class="fa fa-search"></i></a>
@@ -48,13 +45,12 @@
             </form>
         </div>
     </nav>
-
     <nav id="white">
-        <a href="#contact">Contact Us</a>
-        <a href="#market">Market</a>
-        <a href="#about" id="about">About Us</a>
-        <a href="#request">Buyer Requests</a>
-        <a href="#postP">Post Product</a>
+        <a href="#contact" class="foo">Contact Us</a>
+        <a href="#market" class="foo">Market</a>
+        <a href="#about" id="about" class="foo">About Us</a>
+        <a href="#request" class="foo">Buyer Requests</a>
+        <a href="#postP" class="foo">Post Product</a>
 
     </nav>
     <!-- <h1>Buy and sell products with Chantos'farm!!</h1> -->
@@ -98,15 +94,13 @@
     </div>
 
     <h1>Buy and sell products with Chantos'farm Bss!!</h1>
-
-
     <div id="about">
         <button id="upd">About Chanto's Farm Bss</button>
         <p>Chanto's Farm Bss is an online marketplace for African farmers developed by a Farmer for farmers. We understand the context to build the largest online farmers' marketplace in Africa. We aim to connect farmers with sellers and suppliers with farm
             inputs and people from different countries to get agricultural products they want easily online.<span id="dot">..</span><span id="more"> Despite whether they have a smartphone, electronic devices or not; they can still access our services
             using USSD. We connect African farmers with sellers across the world. As agriculture is the main sector in Africa; we believe that once it is developed; we will move from a less developed continent to the most developed continent.</p>
      </span>
-        </p><button onclick="check()" id="btn">Read more</button>
+        </p><button onclick="check()" id="btn" class="id">Read more</button>
     </div>
     <div id="sell">
         <div id="update">
@@ -116,12 +110,11 @@
             </p>
         </div>
         <label>*Product Name</label><br>
-        <input type="text" value="product title" id="id"><br><br>
+        <input type="text" placeholder="product title" id="id" class="sl"><br><br>
         <label>*Select category</label><br>
-        <select>
-
-                <option>Live stock</option>
-                <option>Fishery</option>
+        <select id="sl">
+                <option value="Live stock">Live stock</option>
+                <option value="Fishery">Fishery</option>
                 <option>AgroChemicals</option>
                 <option>Cash crops</option>
                 <option>Animal feed</option>
@@ -143,20 +136,20 @@
 
             </select><br><br>
         <label>*When are your products available?</label><br>
-        <select>
+        <select id="sl">
             <option>Immediately available</option>
             <option>After 1-5 weeks</option>
-            <option>Avalable at later date </option>
+            <option>Available at later date </option>
         </select><br><br>
         <label>Describe your products</label><br>
-        <input type="text" id="id" value="Give a detailed description of the products you are selling"><br><br>
+        <input type="text" class="sll" id="id" placeholder="Give a detailed description of the products you are selling"><br><br>
         <label>*Are you pricing per unit or as whole?</label><br>
-        <select>
+        <select id="sl">
             <option>Per unit</option>
             <option>As whole</option>
         </select><br><br>
         <label>Which country are your products based from?</label><br>
-        <select>
+        <select id="sl">
             <option>Rwanda</option>
             <option>kenya</option>
             <option>Uganda</option>
@@ -170,19 +163,28 @@
             <option>UK</option>
         </select><br><br>
         <label>*Transportation</label><br>
-        <select>
+        <select id="sl">
             <option>I offer my own Transportation</option>
             <option>Not applicable</option>
             <option>Transportation should be provided</option>
         </select><br><br>
         <label>Enter price</label><br>
-        <input type="text" id="id" value="price"><br><br>
-        <label>Search your location name (via google maps)
+        <input type="text" id="id" placeholder="price" class="sl"><br><br>
+        <!-- <label>Search your location name (via google maps)
         </label><br>
-        <input type="text" id="id"><br><br>
+        <input type="text" id="id" class="sl"><br><br> -->
         <a href="#next"><button id="id"class="rd">Next<<</button></a>
-        <div id="next">
-            <button>Upload images</button><br>
+        <div id="next"><br>
+            <p>Do You have an Image of your product?
+                <a href="#up">Yes?</a>
+                <a href="#id">No</a>
+            </p>
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">
+                <!-- <button>Submit</button>
+                <a href="#body"><input type="submit"></a> -->
+            </form>
+            <!-- <button id="up">Upload images</button><br> -->
             <a href="#log"><button id="id"class="id">Post</button></a>
         </div>
     </div>
@@ -225,14 +227,12 @@
     <div id="here">
         <div id="survey">
             <div id="post" class="large">
-                <h4>Chanto 's Survey</h4>
+                <h4>Chanto's Survey</h4>
             </div>
-            <p id="su">*1.What is your gender?</p>
-            <input type="radio"><label>Female</label><br>
+            <p id="su">*What is your gender?</p>
+            <input type="radio" class="cir"><label>Female</label><br>
             <input type="radio"><label>Male</label>
-            <p id="su ">*2.What is Your Name?</p>
-            <input type="text ">
-            <p id="su ">*3.What is your age range?</p><br>
+            <p id="su">*What is your age range?</p>
             <input type="radio"><label>Under 18</label><br>
             <input type="radio"><label>18-25</label><br>
             <input type="radio"><label>26-30</label><br>
@@ -245,68 +245,65 @@
             <input type="radio"><label>Rwanda</label><br>
             <input type="radio"><label>Tanzania</label><br>
             <input type="radio"><label>Other country</label><br>
-            <input type="text" value="Specify a country... ">
-            <p id="su">* What do you like about Mkulima Young online marketplace?</p>
-            <input type="text">
-            <p id="su">5.*Which function of Chanto's farm do you use most?</p>
+            <p id="su">*Which function of Chanto's farm do you use most?</p>
             <input type="radio"><label>Website</label><br>
             <input type="radio"><label>Android App</label><br>
-            <p id="su "> 6.*How often do you use Mkulima Young</p>
-            <input type="radio"><label>Daily</label><br>
-            <input type="radio"><label>Weekly</label><br>
-            <input type="radio"><label>Monthly</label><br>
-            <input type="radio"><label>Android App</label><br>
-            <input type="radio"><label>Few times a year</label><br>
-            <input type="radio"><label>Not at all</label><br>
-            <input type="radio"><label>Other(please specify)</label><br>
-            <input type="text">
-            <p id="su "> 7.*What do you use Chanto's farm for?</p>
+            <p id="su ">*What do you use Chanto's farm for?</p><br>
             <input type="radio"><label>Buying</label><br>
             <input type="radio"><label>Selling</label><br>
             <input type="radio"><label>Comparing prices</label><br>
             <input type="radio"><label>Getting Farming Tips</label><br>
-            <p id="su">* 8. How has Chanto's farm Bsshelped in your agribusiness venture?
-            </p>
-            <input type="text">
-            <p id="su ">*8.How has Chanto's farm Bss helped in your agribusiness venture?<br>
-                <input type="text">
-                <p id="su">* 9. What would you like Chanto's Farm Bss to improve on their platform?
+            <p id="su ">*How often do you use Mkulima Young</p>
+            <input type="radio"><label>Daily</label><br>
+            <input type="radio"><label>Weekly</label><br>
+            <input type="radio"><label>Monthly</label><br>
+            <input type="radio"><label>Android App</label><br>
+            <input type="radio"><label>Not at all</label><br>
+            <input type="radio"><label>Few times a year</label><br>
+            <input type="radio"><label>Other(Specify Please)</label><br>
+            <input type="text" id="id" class="sl" placeholder="specify it">
+            <p id="su ">*What is Your Name?</p>
+            <input type="text" id="id" class="sl" placeholder="Your full name"><br>
+            <p id="su">* What do you like about Chanto's Farm Bss online marketplace?</p>
+            <input type="text" id="id" class="sll"><br>
+            <p id="su ">*How has Chanto's farm Bss helped in your agribusiness venture?<br>
+                <input type="text" id="id" class="sll">
+                <p id="su">*What would you like Chanto's Farm Bss to improve on their platform?
                 </p>
-                <input type="text">
-                <p id="su">*10.Any Other comment or suggetion
+                <input type="text" id="id" class="sll">
+                <p id="su">*Any Other comment or suggestion
                 </p>
-                <input type="text"><br><br>
+                <input type="text" id="id" class="sll"><br><br>
                 <a href="#body"><button id="id"class="id">Submit</button></a><br>
         </div>
     </div>
     <div id="register">
-        <p>By signing up, you agree to MY's Terms of Use and Privacy Policy and consent to<br> receiving marketing from MY and third party offers
+        <p>By signing up, you agree to Our Terms of Use and Privacy Policy and consent to<br> receiving marketing from Chanto's Farm Bss and third party offers
         </p>
-        </p>
-        <label>Signup</label><br>
+        <label id="sig">Signup</label><br>
         <!-- <i class=" fa fa-user " aria-hidden="true "></i> -->
-        <input type="text" value="First name "><label></label>
-        <input type="text" value=" second name ">
+        <input type="text" placeholder="First name" class="sl" id="pa"><label></label>
+        <input type="text" placeholder=" second name " class="sl" id="pa">
         <br>
         <label><i class="fa fa-phone " aria-hidden="true "></i>Phone Number
             </label><br>
-        <input type="text" id="id"><br>
+        <input type="text" id="id" class="sl"><br>
         <label><i class="fa fa-envelope" aria-hidden="true ">Email</i>
             </label><br>
-        <input type="text" id="id"><br>
+        <input type="text" id="id" class="sl"><br>
         <label>*Gender</label><br>
-        <select>
+        <select id="sl">
                 <option>Male</option>
                 <option>Female</option>
             </select><br>
         <label>*Are your seller(farmer) or buyer?</label><br>
-        <select>
+        <select id="sl">
                 <option>Seller</option>
                 <option>Buyer</option>
                 <option>Both Buyer and Seller</option>
             </select><br>
         <label>*countries</label><br>
-        <select>
+        <select id="sl">
                 <option>Rwanda</option>
                 <option>kenya</option>
                 <option>Uganda</option>
@@ -320,9 +317,9 @@
                 <option>UK</option>
             </select><br>
         <label>*Password</label><br>
-        <input type="text" id="id"><br>
+        <input type="text" id="id" class="sl"><br>
         <label>* Confirm Password</label><br>
-        <input type="text" id="id"><br><br>
+        <input type="text" id="id" class="sl"><br><br>
         <button id="id" class="id">Signup</button>
         <p>Already have account?
             <a href="#log">Login Here</a>
@@ -331,9 +328,9 @@
     <div id="log">
         <h5>Sign in</h5><br>
         <label><i class="fa fa-envelope " aria-hidden="true "></i>Email</label><br>
-        <input type="text " value="...... " id="id"><br><br>
+        <input type="text" placeholder="...... " id="id" class="sl"><br><br>
         <label>*Password</label><br>
-        <input type="text" value="...... " id="id"><br><br>
+        <input type="text" placeholder="...... " id="id" class="sl"><br><br>
         <a href="#body"><button id="id"class="rd">Login</button></a>
         <p>Or </p>
 
@@ -343,7 +340,7 @@
         <a href="http://www.gmail.com/. "><button id="id" class="rd">Login with Google</button></a>
     </div>
     <div id="buy">
-        <div id="post">
+        <div id="post" class="pos">
             <h4>Post Your product</h4>
             <p>This is where you post product which is not currently listed on Market</p>
         </div>
@@ -354,7 +351,7 @@
             </p>
         </div>
         <label>*What are you looking for?</label><br>
-        <input id="id"><br><br><select>
+        <input id="id" class="sl"><br><br><select id="sl">
         <label>Choose an appropriate category?</label>
         <option>Live stock</option>
         <option>Fishery</option>
@@ -377,15 +374,27 @@
         <option>Nuts and kernels</option>
         <option>Other</option>
         </select><br><br>
-        <label>Describe the product in detail (e quantity, do you want it delivered, Your buying price, negotiable..etc)</label><br>
-        <input type="text">
+        <label>Describe the product in detail (ex: quantity, do you want it delivered,..)</label><br>
+        <input type="text" id="id" class="sll">
+        <br>
+        <label>*When do you want it?</label><br>
+        <input type="text" id="id" placeholder="Time" class="sl"><br>
+        <label>*Your Country?</label><br>
+        <input type="text" id="id" class="sl"><br>
+        <label>*Any Other Comment?</label><br>
+        <input type="text" id="id" class="sll">
+        <br>
+        <br>
+        <a href="#body"><button id="id"class="id">Submit</button></a>
     </div>
     <div id="request">
         <div id="post" class="pos">
             <h4>Buyers's request</h4>
             <p>All Buyers request are posted here</p>
         </div>
-        <input type="text" value="I m looking for"><input type="text" value="location"><select>
+        <input type="text" placeholder="I m looking for" class="sl">
+        <input type="text" placeholder="location" class="sl">
+        <select id="sl">
             <option>+5KM</option>
             <option>+10KM</option>
             <option>+40KM</option>
@@ -466,6 +475,8 @@
     <div>
     </div>
     <div id="ussd">
+        <button id="updd">Messages from USSD Users</button>
+
         <div class="row">
             <div class="column">
                 <div class="card">
